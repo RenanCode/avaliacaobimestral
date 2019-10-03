@@ -31,11 +31,11 @@
 	<h1>Mande uma mensagem</h1>
 	<form action="contato" method="POST" name="contato">
 		<label for="nome">Nome</label>:<br>
-		<input type="text" name="name_contact" id="name_contact" required title="Digite o seu nome"></br>
+		<input type="text" name="name_contact" id="name_contact" maxlength="50" required title="Digite o seu nome"></br>
 		<label for="email">E-mail</label>:<br>
-		<input type="email" name="email" id="email" required title="Digite o seu e-mail"></br>
+		<input type="email" name="email" id="email" maxlength="50"  required title="Digite o seu e-mail"></br>
 		<label for="telefone">Telefone</label>:<br>
-		<input type="tel" name="telephone_contact" id="telephone_contact" required title="Digite o seu telefone"><a><b>
+		<input type="tel" name="telephone_contact" id="telephone_contact" maxlength="50" required title="Digite o seu telefone"><a><b>
 				(99) 99999-9999</b></a><br>
 		Assunto<br />
 		<select name="assunto">

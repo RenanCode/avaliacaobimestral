@@ -1,10 +1,25 @@
 
+body{
+  float:left;
+  width:100%;
+  text-align:center;
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-repeat: no-repeat, repeat;
+  background-color: #cccccc;
+}
 p {
     width: 50%;
     margin: auto;
     padding: 10px;
     text-align: center;
     display: inherit;
+
+      border-radius: 15px 50px 30px 5px;
+      background: #73AD21;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+ 
 }
 
 #menu ul {
@@ -12,6 +27,8 @@ p {
     margin:0px;
     background-color:#EDEDED;
     list-style:none;
+    -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: width 2s;
 }
 
 #menu ul li { display: inline; }
@@ -37,6 +54,9 @@ img{
     margin: auto;
     padding: 10px;
     text-align: center;
+    -webkit-transition: width 4s; /* Safari prior 6.1 */
+    transition-delay: 3s;
+
 }
 
 .cab_verde {
@@ -44,23 +64,32 @@ img{
 
 }
 
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
 div {
     border: 5px solid rgb(255, 255, 255);
     padding: 3px;
     margin: 20px;
     text-align: center;
+    -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: width 2s;
   }
 
 div.div2 {
     border: 5px solid green;
     padding: 3px;
     margin: 20px;
+    transition-delay: 2s;
   }
 
   div.div3{
     text-align: left;
     display:flex;
     flex-wrap: wrap;
+    transition-delay: 1s;
 }
 
 
@@ -82,4 +111,10 @@ div.div2 {
     border: 5px solid green;
     padding: 3px;
     margin: 20px;
+
+    
   }
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; }
+    }
